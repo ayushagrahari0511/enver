@@ -1,0 +1,14 @@
+.container {
+    position: absolute;
+    background: url(/Images/Rectangle9544.png), url(/Images/Rectangle9560.png), url(/Images/Rectangle9543.svg);
+    background-repeat: no-repeat;
+    background-size: 80rem, 70rem, 250vh;
+    background-position: top 160vh left -30rem, top 260vh right -25rem, top 160vh right -20rem;
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        background-size: 70rem;
+        background-position: top 220vh left -30rem;
+    }
+  }

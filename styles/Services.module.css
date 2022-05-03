@@ -1,0 +1,106 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url(/Images/Group162527.svg), url(/Images/add.svg), url(/Images/add1.svg);
+    background-repeat: no-repeat;
+    background-size: 8rem, 5rem , 3rem;
+    background-position: top 0rem left 1rem, top 1rem right 1rem, bottom .2rem left .4rem;
+}
+
+.title {
+    text-align: center;
+    width: 50%;
+}
+
+.services {
+    /* height: 70vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 2rem; */
+}
+
+.service_index {
+    /* width: 30rem; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        width: 100%;
+        height: 130vh;
+    }     
+
+    .services {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .service_index {
+        width: 30rem;
+        margin: 1rem 1rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .container {
+        height: 170vh;
+    }     
+
+    .service_index {
+        width: 20rem;
+        margin: 1rem 1rem;
+    }
+  }
+  
+  /* Small devices such as phone */
+  
+  @media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        height: 280vh;
+    }     
+
+    .wrapper {
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: 5rem, 5rem , 3rem;
+        background-position: top 0rem left 1rem, top 12rem right 1rem, bottom .2rem left .4rem;
+    
+    }
+
+    .title {
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    .services {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .service_index {
+        width: 100%;
+        margin: 3rem 0;
+    }
+   }

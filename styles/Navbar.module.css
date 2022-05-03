@@ -1,0 +1,128 @@
+.container {
+    max-width: 100vw;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    /* width: 3rem ; */
+}
+
+.icon h3 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1rem;
+}
+
+.route_wrappershow, .route_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.route a {
+    margin: 0 1.5rem;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact button {
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    width: 15rem;
+    height: 4.4rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu_icon {
+    display: none;
+}
+
+/* For large devices such as desktops and landscape tablets */
+@media (max-width: 1199.98px) {
+    .route_wrapper {
+        display: flex;
+    }
+
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .route_wrapper {
+        display: none;
+    }
+
+    .route_wrappershow {
+        right: 0;
+        top: 0;
+        width: 30rem;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: hsl(240, 4%, 10%, 0.92);
+        animation: Showing 0.2s linear;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .route {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_icon {
+        display: block;
+    }
+
+    .Nav_Img {
+        transform: rotate(45deg);
+    }
+
+    @keyframes Showing {
+        0% {
+            transform: scale(0.95);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .icon h3 {
+        color: #fff;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: .5rem;
+    }   
+
+    .icon img {
+        width: 3rem !important;
+    }
+}

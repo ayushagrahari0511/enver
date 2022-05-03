@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content h2 {
+    width: 50%;
+}
+
+.content p {
+    width: 50%;
+    padding: 0 4rem;
+}
+
+.player {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.player video {
+    width: 100%;
+    height: 100%;
+}
+
+/* REsponsive code */
+  
+    
+  /* Small devices (landscape phone, ) */
+  
+  @media (max-width: 767.98px) {
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }     
+
+    .content h2 {
+        width: 100%;
+    }
+    
+    .content p {
+        width: 100%;
+        padding: 0;
+    }
+    
+.player {
+    height: 55vh;
+    overflow: visible;
+} 
+  }
+  
+  /* Small devices such as phone */
+  
+  @media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .player {
+        height: 30vh;
+    }
+   }
